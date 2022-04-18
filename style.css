@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    font-family: 'lato';
+}
+
+#navbar {
+    grid-column: 1/4;
+    text-align: center;
+    position: sticky;
+    height: 100vh;
+    top: 0;
+
+}
+
+#navbar header {
+    font-size: 26px;
+    font-weight: 700;
+    padding: 20px 5px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+    border-bottom: gray solid 1px;
+}
+
+#main-doc {
+    grid-column: 4/-1;
+}
+
+
+
+@media screen and (max-width: 910px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #navbar {
+        height: 35vh;
+        overflow-y: auto;
+        position: static;
+    }
+}
