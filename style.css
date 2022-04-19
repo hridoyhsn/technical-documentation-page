@@ -1,9 +1,16 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    font-family: 'lato';
+    font-family: 'Lato', sans-serif;
 }
+
+
 
 #navbar {
     grid-column: 1/4;
@@ -11,12 +18,13 @@ body {
     position: sticky;
     height: 100vh;
     top: 0;
+    border-right: 1px solid black;
 
 }
 
 #navbar header {
-    font-size: 26px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 900;
     padding: 20px 5px;
 }
 
@@ -30,8 +38,35 @@ body {
 
 #main-doc {
     grid-column: 4/-1;
+    padding: 30px;
 }
 
+/* main documents (right side) */
+#main-doc header {
+    font-weight: 700;
+    font-size: 1.5em;
+    padding: 15px 0;
+}
+
+p {
+    margin-left: 15px;
+    padding: 8px 0;
+}
+
+ul {
+    margin-left: 65px;
+}
+
+code {
+    background-color: rgb(253, 241, 223);
+    font-size: large;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 140, 140);
+    margin: 15px 10px;
+    padding: 15px;
+    display: block;
+
+}
 
 
 @media screen and (max-width: 910px) {
